@@ -1,19 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>varun</title>
+  <link rel="icon" href="var.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Love Proposal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <style>
+   
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      background-color: #ffe6f0;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    /* Page Content */
+    .content {
+      text-align: center;
+      color: #d50064;
+    }
+
+    .heart {
+      font-size: 100px;
+      color: red;
+      animation: heartBeat 1.5s infinite;
+    }
+
+    h1 {
+      font-size: 50px;
+      font-family: 'Great Vibes', cursive;
+      margin-top: 20px;
+      color: #d50064;
+    }
+
+    p {
+      font-size: 22px;
+      font-family: 'Poppins', sans-serif;
+      margin-top: 10px;
+      color: #444;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background-color: #d50064;
+      color: white;
+      padding: 15px 30px;
+      font-size: 24px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #9c0041;
+    }
+
+    /* Heart animation */
+    @keyframes heartBeat {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+  </style>
 </head>
 <body>
-    <h1 style="color: blue;">Hi juliyet thangoo Good Morning 🫣💙 </h1>
-    <br>
-    <img width="400px" src="b.jpg" alt="">
-    <p> Hi papa paathu ooruku ponga take care da ma , miss youuu lots i am always with you da ma 😘🫂 </p>
-    <br>
-    <h2>  YOU ONLY ENOUGH 😘🫂</h2>
-    <br>
-    <br>
-    <video src="papa.mp4" controls width="400px"></video>
+  <div class="content">
+    <!-- Heart Animation -->
+    <div class="heart">❤️</div>
+
+    <!-- Proposal Message -->
+    <h1>Will You Be Mine?</h1>
+    <p>From the moment we met, my heart has been yours. I want to spend the rest of my life with you. Will you marry me?</p>
+    
+    <!-- Call to Action Button -->
+    <button class="btn" onclick="showProposal()">Yes, I will!</button>
+  </div>
+
+  <script>
+    function showProposal() {
+      // Display a confirmation message when the button is clicked
+      alert("You just said YES! 💍❤️");
+      // Optionally, you can redirect to another page or show a different message
+      // window.location.href = "thank_you_page.html"; // Example of redirection
+    }
+  </script>
 </body>
 </html>
